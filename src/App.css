@@ -2,20 +2,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-.container{
-  padding: 0 1rem;
-  margin-left: 30%;
-  margin-right: 30%;
+  
 }
 
-.btn{
+ .App{
+  background-color: #f4f4f4;
+  min-height: 500px;
+  width: 400px;
+  margin: 40px auto;
+}
+#form Button:enabled{
+  width: 80px;
+  min-height: 50px;
   display: inline-block;
-  border: none;
-  background: #555;
+   border: none; 
+   background: grey;
   color: #fff;
   padding: 7px 20px;
   cursor: pointer;
+  border:0;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+#form Button:disabled{
+   width: 80px;
+  min-height: 50px;
+  display: inline-block;
+  background-color: red;
+  font-size: larger;
+  font-weight: bolder;
 }
 .btn:hover {
   background: #666;
@@ -24,8 +40,76 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
 }
-
+#form input{
+  background-color: #f4f4f4;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  color: rgb(12, 11, 11);
+}
+#form input::placeholder{
+color:  rgb(12, 11, 11);;
+}
+#form input:focus,#form Button:focus{
+outline: none;
+}
 a {
   color: #333;
   text-decoration: none;
+}
+
+
+@media (max-width: 410px){
+  .App{
+  background-color: #f4f4f4;
+  min-height: 500px;
+  width: 300px;
+  margin: 10px auto;
+}
+#form Button:enabled{
+  width: 80px;
+  min-height: 50px;
+  display: inline-block;
+   border: none; 
+   background: grey;
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+  border:0;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+#form Button:disabled{
+   width: 80px;
+  min-height: 50px;
+  display: inline-block;
+  background-color: yellowgreen;
+  font-size: larger;
+  font-weight: bolder;
+}
+.btn:hover {
+  background: #666;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+#form input{
+  background-color: #f4f4f4;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  color: rgb(12, 11, 11);
+}
+#form input::placeholder{
+color:  rgb(12, 11, 11);;
+}
+#form input:focus,#form Button:focus{
+outline: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
 }
